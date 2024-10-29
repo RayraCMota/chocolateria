@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' ;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+
+.carousel-img{
+ max-width: 70%;
+}
+
+header{
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    background-color: rgba(67, 28, 28, 0.906);
+    font-family: 'briem hand';
+    color: #fff;
+    z-index: 100;
+
+}
+
+.mobile-menu{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: auto;
+    background-color: rgba(67, 28, 28, 0.906);
+
+}
+
+.nav-links-mobile li{
+    list-style: none;
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(61, 67, 28);
+    padding: 15px;
+}
+
+.nav-links-mobile li a{
+    color: #fff;
+    font-family: "Roboto";
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+
+.hamburger, .close{
+    display: grid;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+body{
+    background-color: rgb(246, 233, 218);
+    
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+}
+
+header h1{
+    padding-bottom: 0;
+    font-family: 'briem hand';
+    
+}
+
+header h3{
+    padding-bottom: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding-top: 20px ;
+    padding-left: 10px;
+
+}
+
+.logo{
+    display: flex;
+}
+
+.promo{
+    display: flex;
+    justify-content: center;
+    padding: 45px 0;
+}
+
+.img_promo{
+    padding-top: 60px;
+    width: 800px;
+    height: max-content;
+}
+
+
+.menu li{
+    display: inline;
+    list-style: none;
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(61, 67, 28);
+}
+
+.menu li a{
+    color: #fff;
+    font-family: "Roboto";
+    text-decoration: none;
+    padding: 0 10px;
+
+}
+
+.menu li a:hover{
+    text-decoration: underline;
+}
+
+.sobre .container{
+    max-width: 75%;
+    display:flex;
+    justify-content: center;
+    padding: 75px 35px;
+}
+
+.sobre img{
+    width: 400px;
+
+}
+
+.container-eventos{
+    max-width: 75%;
+    display:flex;
+    justify-content: center;
+    padding: 75px 35px;
+}
+
+.descritivo-sobre{
+    font-family: 'roboto';
+    padding-left: 25px;
+    width: 100%;
+
+}
+
+.descritivo-eventos{
+    font-family: 'roboto';
+    padding-right: 25px;
+    width: 100%;
+    text-align: right;
+}
+
+h2{
+    padding: 10px 0;
+}
+
+.texto-descritivo{
+    padding-top: 5px;
+}
+
+
+.produto img{
+    max-width: 95%;
+}
+
+.todos-produtos .container{
+    padding: 65px 0;
+}
+
+.todos-produtos h2,
+.descritivo h2{
+    font-size: 35px;
+    color: rgb(67, 28, 28);
+    border-bottom: 2px solid rgb(67, 28, 28);
+
+}
+
+.produto{
+    color: rgb(67, 28, 28);
+}
+
+.produtos{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+button{
+    background-color: rgb(67, 28, 28);
+    color:#fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 95%;
+}
+
+.container-contato{
+    padding: 75px 30px;
+}
+
+.whats{
+    max-width: 150px;
+}
+
+footer{
+    background-color: rgb(67, 28, 28);
+}
+
+.p-footer{
+    color: #fff;
+    padding: 10px 60px;
+    font-size: 12px;
+}
+
+.flex{
+    display: flex;
+}
+
+@media screen and (min-width:641px) and (max-width:1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    button{
+        width: 45px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .img_promo{
+        padding-top: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100%;
+        height: max-content;
+    }
+
+    .descritivo h2{
+        font-size: 25px;
+    }
+
+    .sobre > .container{
+        display:block;
+        padding: 35px;
+    }
+
+    .descritivo-sobre{
+        padding:5px;
+    }
+
+    .descritivo-eventos{
+        padding:5px;
+    
+    }
+
+    .container-eventos{
+        display: block;
+    }
+
+    .carousel-img{
+        max-width: 100%;
+    }
+
+    .carousel-img2{
+        max-width: 100%;
+    }
+
+    .sobre img{
+        width: 100%;
+    
+    }
+    .produtos{
+        grid-template-columns: repeat(2, 49%);
+    }
+
+} 
+
+@media screen and (max-width:641px){
+    
+    .container{
+        max-width: 90%;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    button{
+        width: 45px;
+    }
+
+    .img_promo{
+        padding-top: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100%;
+        height: max-content;
+    }
+    
+    .produtos{
+        display: block;
+        padding: 35px;
+    }
+
+    .sobre > .container{
+        display:block;
+        padding: 35px 0;
+    }
+
+    .descritivo-sobre{
+        padding:5px;
+    
+    }
+
+    .descritivo-eventos{
+        padding:5px;
+    
+    }
+
+    .container-eventos{
+        display: block;
+    }
+
+    .carousel-img{
+        max-width: 100%;
+    }
+
+
+}
