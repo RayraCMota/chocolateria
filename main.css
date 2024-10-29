@@ -55,7 +55,16 @@ header{
 }
 
 
-.hamburger, .close{
+.hamburger{
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close{
     display: grid;
     font-size: 24px;
     background: none;
@@ -237,9 +246,6 @@ footer{
 
     .hamburger{
         display: block;
-    }
-
-    button{
         width: 45px;
     }
 
@@ -307,11 +313,10 @@ footer{
 
     .hamburger{
         display: block;
-    }
-
-    button{
         width: 45px;
     }
+
+
 
     .img_promo{
         padding-top: 60px;
